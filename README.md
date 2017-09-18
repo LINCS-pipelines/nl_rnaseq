@@ -17,19 +17,19 @@ Windows: follow [`the instructions`](https://docs.docker.com/toolbox/toolbox_ins
 ### Download and run the docker container
 To obtain the docker image and run the container,
 ```
-[sudo] docker pull ucbd2k/neurolincs:v1
+[sudo] docker pull ucbd2k/neurolincs_rna-seq:v1
 ```
 Linux users may need to use `sudo` to run Docker.
 
 To run the container execute the following command:
 
 ```
-[sudo] docker run -d -p <an available port>:8787 ucbd2k/neurolincs:v1
+[sudo] docker run -d -p <an available port>:8787 ucbd2k/neurolincs_rna-seq:v1
 ```
 Typically one can use port 8787 if not already used by another application. In that case the commad is
 
 ```
-[sudo] docker run -d -p 8787:8787 ucbd2k/neurolincs:v1
+[sudo] docker run -d -p 8787:8787 ucbd2k/neurolincs_rna-seq:v1
 ```
 
 
