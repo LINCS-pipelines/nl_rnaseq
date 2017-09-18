@@ -1,6 +1,6 @@
-# Neurolincs: Docker container for generating Neurolincs signature (Step-2) in RStudio
+# Neurolincs_rna-seq: Docker container for generating Neurolincs RNA-seq signature (Step-2) in RStudio
 
-This docker container is developed to create level 4 signature data from level 3 counts data. The docker has been tested on Neurolincs level 3 data downloaded from [`Lincs data portal`](http://lincsportal.ccs.miami.edu/datasets/#/view/LDS-1398).
+This docker container is developed to create Neurolincs RNA-seq level 4 signature data from level 3 counts data. The docker has been tested on Neurolincs level 3 data downloaded from [`Lincs data portal`](http://lincsportal.ccs.miami.edu/datasets/#/view/LDS-1398).
 The docker has been tested for all of the on Linux (Ubuntu 14.04 and 16.04), macOS (10.11.6), and Windows (Windows 7 Enterprise). 
 
 ---
