@@ -14,7 +14,7 @@ Mac: follow [`the instructions`](https://store.docker.com/editions/community/doc
 Windows: follow [`the instructions`](https://docs.docker.com/toolbox/toolbox_install_windows/) to install [`Docker Tookbox`](https://download.docker.com/win/stable/DockerToolbox.exe) on Windows.
 
 ---
-### Download the docker container
+### Download and run the docker container
 To obtain the docker image and run the container,
 ```
 [sudo] docker pull ucbd2k/neurolincs:v1
@@ -43,21 +43,18 @@ To know the container ID run this command:
 docker ps -a
 ```
 ---
-### Run the Docker
-
-To run the container execute the following command:
-
-```
-[sudo] docker run -d -p <an available port>:8787 ucbd2k/pccse:v3
-```
-or
-
-```
-[sudo] docker run -d -p 8787:8787 ucbd2k/pccse:v3
-```
 
 To start an RStudio session, open a browser and type in the address bar `http://localhost:8787` on Mac or Linux systems when 8787 port is used.
 
 Host URL on Ubuntu and Mac is `localhost`, if accessed locally. On Windows, the IP is shown when Docker is launched by double-clicking the Docker Quickstart Terminal icon on desktop, or it can be obtained from the output of `docker-machine ls` in the interactive shell window.
+
+---
+### Execute the processing pipeline
+
+After entring the rstudio environment, On the "Files" widget in the rstudio, click the file named: "process_neurolincs_data.R".
+
+You can just run the pipeline for the given dataset ("LDS-1398") or change the dataset name in the download_dataset("your_dataset_name") command.
+
+The pipeline will generate the signature data and save the data as .csv file in the working directory. 
 
 ---
