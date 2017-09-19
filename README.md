@@ -51,7 +51,7 @@ Host URL on Ubuntu and Mac is `localhost`, if accessed locally. On Windows, the 
 ---
 ### Execute the processing pipeline
 
-After entring the rstudio environment, type the following command in the console:
+After entering the rstudio environment, type the following command in the console:
 
 ``` 
 source("process_neurolincs_data.R")
