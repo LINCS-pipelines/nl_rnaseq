@@ -51,10 +51,12 @@ Host URL on Ubuntu and Mac is `localhost`, if accessed locally. On Windows, the 
 ---
 ### Execute the processing pipeline
 
-After entring the rstudio environment, On the "Files" widget in the rstudio, click the file named: "process_neurolincs_data.R".
+After entring the rstudio environment, type the following command in the console:
 
-You can just run the pipeline for the given dataset ("LDS-1398") or change the dataset name in the download_dataset("your_dataset_name") command.
+``` 
+source("process_neurolincs_data.R")
+```
 
-The pipeline will generate the signature data and save the data as .csv file in the working directory. 
+You can just run the pipeline for the given dataset ("LDS-1398"). The pipeline will generate the signature data and save the data as .csv file in the working directory. 
 
 ---
