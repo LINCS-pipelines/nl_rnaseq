@@ -17,19 +17,19 @@ Windows: follow [`the instructions`](https://docs.docker.com/toolbox/toolbox_ins
 ### Download and run the docker container
 To obtain the docker image and run the container,
 ```
-[sudo] docker pull ucbd2k/neurolincs_rna-seq:v1
+[sudo] docker pull ucbd2k/nl_rna-seq:stable
 ```
 Linux users may need to use `sudo` to run Docker.
 
 To run the container execute the following command:
 
 ```
-[sudo] docker run -d -p <an available port>:8787 ucbd2k/neurolincs_rna-seq:v1
+[sudo] docker run -d -p <an available port>:8787 ucbd2k/nl_rna-seq:stable
 ```
 Typically one can use port 8787 if not already used by another application. In that case the commad is
 
 ```
-[sudo] docker run -d -p 8787:8787 ucbd2k/neurolincs_rna-seq:v1
+[sudo] docker run -d -p 8787:8787 ucbd2k/nl_rna-seq:stable
 ```
 
 
@@ -57,6 +57,9 @@ After entering the rstudio environment, type the following command in the consol
 source("process_neurolincs_data.R")
 ```
 
-You can just run the pipeline for the given dataset ("LDS-1398"). The pipeline will generate the signature data and save the data as .csv file in the working directory. 
+You can also open the R code by clicking the file named "process_neurolincs_data.R" from the files panel in the bottom-right of your window. 
+Once you see the code appears in the top-left window, you can select the whole code (Ctrl+A) and click "Run" at the top of your window or just press Ctrl+Enter.
+
+You can run this pipeline for the given dataset ("LDS-1398"). The pipeline will generate the signature data and save the data as .csv file in the working directory. 
 
 ---
