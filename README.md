@@ -1,4 +1,4 @@
-# Neurolincs_rna-seq: Docker container for generating Neurolincs RNA-seq signature (Step-2) in RStudio
+# Nl_rna-seq: Docker container for generating Neurolincs RNA-seq signature (Step-2) in RStudio
 
 This docker container is developed to create Neurolincs RNA-seq level 4 signature data from level 3 counts data. The docker has been tested on Neurolincs level 3 data downloaded from [`Lincs data portal`](http://lincsportal.ccs.miami.edu/datasets/#/view/LDS-1398).
 The docker has been tested for all of the on Linux (Ubuntu 14.04 and 16.04), macOS (10.11.6), and Windows (Windows 7 Enterprise). 
@@ -44,7 +44,7 @@ docker ps -a
 ```
 ---
 
-To start an RStudio session, open a browser and type in the address bar `http://localhost:8787` on Mac or Linux systems when 8787 port is used.
+To start an RStudio session, open a browser and type in the address bar <Host URL>:<available port as specified>. Enter rstudio for both username and password. For example http://localhost:8787 on Mac or Linux systems when 8787 port is used.
 
 Host URL on Ubuntu and Mac is `localhost`, if accessed locally. On Windows, the IP is shown when Docker is launched by double-clicking the Docker Quickstart Terminal icon on desktop, or it can be obtained from the output of `docker-machine ls` in the interactive shell window.
 
