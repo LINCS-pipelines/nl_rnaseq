@@ -44,7 +44,7 @@ docker ps -a
 ```
 ---
 
-To start an RStudio session, open a browser and type in the address bar <Host URL>:<available port as specified>. Enter rstudio for both username and password. For example http://localhost:8787 on Mac or Linux systems when 8787 port is used.
+To start an RStudio session, open a browser and type in the address bar ``<Host URL>:<available port as specified>``. Enter `rstudio` for both username and password. For example `http://localhost:8787` on Mac or Linux systems when 8787 port is used.
 
 Host URL on Ubuntu and Mac is `localhost`, if accessed locally. On Windows, the IP is shown when Docker is launched by double-clicking the Docker Quickstart Terminal icon on desktop, or it can be obtained from the output of `docker-machine ls` in the interactive shell window.
 
