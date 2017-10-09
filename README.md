@@ -1,4 +1,4 @@
-# Nl_rna-seq: Docker container for generating Neurolincs RNA-seq signature (Step-2) in RStudio
+# Nl_rnaseq: Docker container for generating Neurolincs RNA-seq signature (Step-2) in RStudio
 
 This docker container is developed to create Neurolincs RNA-seq level 4 signature data from level 3 counts data. The docker has been tested on Neurolincs level 3 data downloaded from [`Lincs data portal`](http://lincsportal.ccs.miami.edu/datasets/#/view/LDS-1398).
 The docker has been tested for all of the on Linux (Ubuntu 14.04 and 16.04), macOS (10.11.6), and Windows (Windows 7 Enterprise). 
@@ -17,19 +17,19 @@ Windows: follow [`the instructions`](https://docs.docker.com/toolbox/toolbox_ins
 ### Download and run the docker container
 To obtain the docker image and run the container,
 ```
-[sudo] docker pull ucbd2k/nl_rna-seq:stable
+[sudo] docker pull ucbd2k/nl_rnaseq:stable
 ```
 Linux users may need to use `sudo` to run Docker.
 
 To run the container execute the following command:
 
 ```
-[sudo] docker run -d -p <an available port>:8787 ucbd2k/nl_rna-seq:stable
+[sudo] docker run -d -p <an available port>:8787 ucbd2k/nl_rnaseq:stable
 ```
 Typically one can use port 8787 if not already used by another application. In that case the commad is
 
 ```
-[sudo] docker run -d -p 8787:8787 ucbd2k/nl_rna-seq:stable
+[sudo] docker run -d -p 8787:8787 ucbd2k/nl_rnaseq:stable
 ```
 
 
@@ -58,7 +58,7 @@ source("process_neurolincs_data.R")
 ```
 
 You can also open the R code by clicking the file named `process_neurolincs_data.R` from the files panel in the bottom-right of your window. 
-Once you see the code appears in the top-left window, you can select the whole code `(Ctrl+A)` and click `Run` at the top of your window or just press `Ctrl+Enter`.
+Once you see the code appears in the top-left window, you can select the whole code and click `Run` at the top of your window.
 
 You can run this pipeline for the given dataset `(LDS-1398)`. The pipeline will generate the signature data and save the data as `.csv` file in the working directory. 
 
